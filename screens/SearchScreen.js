@@ -334,6 +334,8 @@ const SearchScreen = ({ navigation }) => {
                       style={styles.sidelogo}
                       source={require("../img/camera.png")}
                     />
+                    <Text>Take a Picture</Text>
+                    
                   </TouchableOpacity>
                   <TouchableOpacity
                     style={styles.innersearchbutton}
@@ -343,8 +345,9 @@ const SearchScreen = ({ navigation }) => {
                     {/* <Text style={styles.innersearchbuttonText}>Upload Photo</Text> */}
                     <Image
                       style={styles.sidelogo}
-                      source={require("../img/gallery_icon.png")}
+                      source={require("../img/library.png")}
                     />
+                    <Text>From Gallery</Text>
                   </TouchableOpacity>
                 </View>
               </Animated.View>
@@ -451,8 +454,8 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   sidelogo: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     resizeMode: "contain",
   },
   btnlogo: {
